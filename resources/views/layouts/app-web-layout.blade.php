@@ -17,7 +17,7 @@
 
         @role('alumni')
         <x-partials.alumni-navbar/>
-    
+        {{ $slot }} 
         @endrole
 
       
