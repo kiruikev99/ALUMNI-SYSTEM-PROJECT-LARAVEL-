@@ -16,9 +16,8 @@
         @endrole   
 
         @role('alumni')
-        <div>
-            <h1>Wozza</h1>
-        </div>
+        <x-partials.alumni-navbar/>
+    
         @endrole
 
       

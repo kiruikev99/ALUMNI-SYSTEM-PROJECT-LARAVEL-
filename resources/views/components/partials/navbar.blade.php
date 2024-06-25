@@ -1,6 +1,6 @@
 
 
-<nav class="bg-white p-2 border-gray-200 dark:bg-red-700">
+<nav class="bg-white p-2 border-gray-200 dark:bg-gray-500">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
      
@@ -26,7 +26,7 @@
         <li>
           <a href="/users" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Users</a>
         </li>
-        <li class="bg-red-600 ">
+        <li class="">
           <a href="/jobs" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Post Job</a>
         </li>
         <li class="relative">
