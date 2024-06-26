@@ -37,15 +37,19 @@ Route::post('/logout', function () {
     return redirect('/login'); // Redirect to home or any other route after logout
 });
 Route::get('/dashboard', function () {
+    $job = alumni_jobs::all();
     $userCount = User::count();
     $permission = Permission::count();
     $jobs = alumni_jobs::count();
     $roles = Role::count();
+
     return view('dashboard', [
         'user'=> $userCount,
         'permission'=>$permission,
         'role'=> $roles,
-        'jobs'=> $jobs
+        'jobs'=> $jobs,
+        'job'=> $job
+       
     ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 

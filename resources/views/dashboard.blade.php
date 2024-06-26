@@ -1,6 +1,6 @@
 <x-app-web-layout>
-    
 
+    @role('super-admin')
     <div class="bg-gray-100 h-full py-12">
     <div class="max-w-7xl mx-auto p-5 sm:px-6 lg:px-10">
         <div class="bg-white p-10 shadow-lg rounded-lg">
@@ -85,5 +85,53 @@
         </div>
     </div>
 </div>
+@endrole
+
+@role('alumni')
+
+<div class="bg-gray-400">
+    <br><br>
+        <div class="text-2xl block text-center">
+                Showing {{$jobs}} Job Posting
+            </div>
+        <div class="mt-10 w-64-lg mx-auto bg-white flex flex-wrap gap-20 p-8 shadow-lg rounded-lg">
+            
+                @foreach ($job as $jobs)
+                    <button href="#"
+                        class="block max-w-sm p-10 bg-white text-left border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $jobs->job_title }}</h5>
+
+
+                        
+                        <p class="font-normal text-gray-700 dark:text-gray-400">{{ $jobs->job_name }}</p>
+                        <br>
+                        <div class="">
+                            <div class="flex text-sm  items-center text-gray-700 dark:text-gray-400 mb-2">
+                                <i class="fas fa-map-marker-alt mr-2"></i> {{ $jobs->job_location }}
+                            </div>
+                            <div class="flex text-sm items-center text-gray-700 dark:text-gray-400 mb-2">
+                                <i class="fas fa-clock mr-2"></i>{{ $jobs->job_duration }}
+                            </div>
+                            <div class="flex text-sm items-center text-gray-700 dark:text-gray-400 mb-2">
+                                <i class="fas fa-money-bill-alt mr-2"></i> ${{ $jobs->job_amount }}
+                            </div>
+                        <br>
+                        </div>
+                        <div class="buttons">
+                            <a href="{{ url('jobs/' . $jobs->id . '/delete') }}" class="bg-red-500 p-2 w-1/4"> Delete</a>
+                            <a  href="{{ url('jobs/' . $jobs->id . '/edit') }}" class="bg-lime-500 p-2 w-1/4" >Update</a>
+
+                        </div>
+                    
+                        
+                </button>
+                @endforeach
+            </div>
+</div>
+
+
+@endrole
+
 
 </x-app-web-layout>

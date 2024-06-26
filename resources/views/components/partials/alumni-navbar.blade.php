@@ -1,8 +1,8 @@
-<nav class="bg-gradient-to-r from-gray-700 via-gray-900 to-black p-4 flex justify-between items-center shadow-lg">
-    <img width="190" class="hover:opacity-80 transition duration-300" src="https://raw.githubusercontent.com/kiruikev99/ALUMNI-SYSTEM-PROJECT-LARAVEL-/master/resources/views/components/partials/logo2.png" alt="kk">
+<nav class="bg-gradient-to-r from-fuchsia-950 via-gray-900 to-black p-4 flex justify-between items-center shadow-lg">
+    <img width="140" class="hover:opacity-80 transition duration-300 rounded-md" src="https://raw.githubusercontent.com/kiruikev99/ALUMNI-SYSTEM-PROJECT-LARAVEL-/master/resources/views/components/partials/LOGO3.png" alt="kk">
 
     <div class="flex-grow">
-        <ul class="text-white cursor-pointer font-serif flex gap-8 text-xl mt-2 ml-3">
+        <ul class="text-red-500 cursor-pointer font-serif flex gap-8 text-sm mt-2 ml-3">
             <li class="hover:text-gray-400 transition duration-300">Find Job</li>
             <li class="hover:text-gray-400 transition duration-300">Your Portfolio</li>
         </ul>

@@ -12,14 +12,12 @@
     <div>
         @role('super-admin')
         <x-partials.navbar/>
-        {{ $slot }} 
-        @endrole   
-
+        @endrole
         @role('alumni')
         <x-partials.alumni-navbar/>
-        {{ $slot }} 
         @endrole
 
+        {{ $slot }} 
       
     </div>
     
