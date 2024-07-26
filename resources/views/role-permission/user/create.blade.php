@@ -40,18 +40,7 @@
                     id="name"
                 >
             </div>
-            <div>
-                <label class="block text-gray-700 font-semibold mb-2" for="name">
-                    Password 
-                </label>
-                <input 
-                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                    placeholder="Name" 
-                    type="text" 
-                    name="password" 
-                    id="name"
-                >
-            </div>
+        
             <div>
                 <label class="block text-gray-700 font-semibold mb-2" for="name">
                     Roles 

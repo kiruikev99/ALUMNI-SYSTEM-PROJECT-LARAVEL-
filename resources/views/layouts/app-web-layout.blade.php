@@ -10,9 +10,10 @@
 </head>
 <body>
     <div>
-        @role('super-admin')
+        @role('super-admin|admin')       
         <x-partials.navbar/>
         @endrole
+        
         @role('alumni')
         <x-partials.alumni-navbar/>
         @endrole

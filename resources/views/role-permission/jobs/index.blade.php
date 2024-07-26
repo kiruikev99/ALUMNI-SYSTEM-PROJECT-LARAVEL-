@@ -1,3 +1,6 @@
+
+
+
 <x-app-web-layout>
     @if(session('status'))
         <script>
@@ -14,7 +17,7 @@
 
     <div class="flex justify-around pt-10 gap-20">
         <div class="flex-none pt-4">
-            <h4 class="text-sm ">Home>Post Job</h4><hr>
+            <h4 class="text-sm ">Home->Post Job</h4><hr>
         </div>
         <div>
             <input class="border-solid rounded-sm w-96 border-2 p-2 " placeholder="Search Job" type="text"> 

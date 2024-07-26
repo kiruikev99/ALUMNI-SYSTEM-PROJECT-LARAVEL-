@@ -3,8 +3,8 @@
 
     <div class="flex-grow">
         <ul class="text-red-500 cursor-pointer font-serif flex gap-8 text-sm mt-2 ml-3">
-            <li class="hover:text-gray-400 transition duration-300">Find Job</li>
-            <li class="hover:text-gray-400 transition duration-300">Your Portfolio</li>
+            <li class="hover:text-gray-400 transition duration-300"><a href="/dashboard"> Jobs </a></li>
+            <li class="hover:text-gray-400 transition duration-300"><a href="/portfolio"> Your Portfolio </a></li>
         </ul>
     </div>
 
@@ -28,7 +28,7 @@
         </li>
     </ul>
 </nav>
-
+{{$slot}}
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const userDropdown = document.getElementById('userDropdown');
